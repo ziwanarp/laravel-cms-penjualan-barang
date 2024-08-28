@@ -46,7 +46,7 @@
                                         </div>
                                         <div class="col-md-8 form-group">
                                     <fieldset class="form-group">
-                                        <select class="form-select" id="basicSelect" name="kode_barang" onchange="showBrg(this.value)" required >
+                                        <select class="form-select" id="basicSelect" name="kode_barang" onclick="showBrg(this.value)" required >
                                             @foreach ($master_barang as $mb)
                                                <option value="{{ $mb->kode_barang }}">{{ $mb->kode_barang }} | {{ $mb->nama_barang }}</option>
                                            @endforeach
@@ -167,16 +167,23 @@
     <script>
         function showBrg(value) {
             $.ajax({
-                url: 'http://127.0.0.1:8000/masterbarang/get/'+value,
+                url: 'http://127.0.0.1:8000/api/masterbarang/get',
                 data: {value},
-                method: 'get',
+                method: 'post',
                 dataType: 'json',
                 success: function(data){
-                    $('#nama_barang').val(data[0].nama_barang);
-                    $('#satuan').val(data[0].satuan);
-                    $('#id_barang').val(data[0].id);
-                    $('#harga').val(data[0].harga);
-                    $('#qty_show').val(data[0].qty);
+                    if(data !== undefined){
+                        $('#nama_barang').val(data[0].nama_barang);
+                        $('#satuan').val(data[0].satuan);
+                        $('#id_barang').val(data[0].id);
+                        $('#harga').val(data[0].harga);
+                        $('#qty_show').val(data[0].qty);
+                    } else {
+                        resp = JSON.parse(data);
+                        if(resp.status == false){
+                            return alert(resp.message)
+                        }
+                    }
                 }
                 });
             }

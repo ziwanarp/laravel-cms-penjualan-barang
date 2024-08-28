@@ -81,9 +81,13 @@ class MasterBarangController extends Controller
      * @param  \App\Models\MasterBarang  $masterBarang
      * @return \Illuminate\Http\Response
      */
-    public function get(MasterBarang $masterbarang)
+    public function get(Request $request)
     {
-        echo json_encode(MasterBarang::where('id', $masterbarang->id)->get());
+        $data = MasterBarang::where('kode_barang', $request->value)->get();
+        if(count($data) <= 0){
+            return response(["status" => false, "message" => "data null"],200);
+        }
+        return response($data);
     }
 
     /**
