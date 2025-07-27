@@ -7,6 +7,7 @@ use App\Http\Controllers\MasterBarangController;
 use App\Http\Controllers\MasterUserController;
 use App\Http\Controllers\PenjualanBarangController;
 use App\Http\Controllers\LaporanPenjualanController;
+use App\Http\Controllers\ImtController;
 use Illuminate\Routing\RouteGroup;
 
 /*
@@ -31,6 +32,15 @@ Route::middleware('auth')->group(function () {
     Route::resource('/penjualanbarang', PenjualanBarangController::class)->except('show');
     Route::get('/getpdf/{penjualanbarang:nomor_penjualan}', [PenjualanBarangController::class, 'getpdf']);
     Route::resource('/laporanpenjualan', LaporanPenjualanController::class)->only('index');
+
+    Route::get('/imt', [ImtController::class, 'index']);
+    Route::post('/imt', [ImtController::class, 'store']);
+    
+    Route::get('/kie', [DashboardController::class, 'kie']);
+
+    Route::get('/pemantauan', [DashboardController::class, 'pemantauan']);
+
+    Route::get('/reportimt', [ImtController::class, 'reportimt']);
 });
 
 Route::middleware('admin')->group(function () {

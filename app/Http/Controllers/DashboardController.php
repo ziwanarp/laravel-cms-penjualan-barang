@@ -2,7 +2,7 @@
 
 namespace App\Http\Controllers;
 
-use App\Models\MasterBarang;
+use App\Models\Imt;
 use App\Models\User;
 
 use Illuminate\Http\Request;
@@ -14,7 +14,21 @@ class DashboardController extends Controller
         return view('dashboard.index', [
             'title' => 'Dashboard',
             'users' => User::all(),
-            'mb' => MasterBarang::all(),
+            'imt'   => Imt::all(),
+        ]);
+    }
+
+    public function kie(){
+         return view('dashboard.kie', [
+            'title' => 'KIE',
+        ]);
+    }
+
+    public function pemantauan(){
+        // dd(Imt::orderBy('id', 'desc')->first());
+         return view('dashboard.pemantauan', [
+            'title' => 'Pemantauan',
+            'imt'   => Imt::orderBy('id', 'desc')->first()
         ]);
     }
 }
