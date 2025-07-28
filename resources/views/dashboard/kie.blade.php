@@ -14,13 +14,29 @@
         <div class="row">
             <div class="col-12 col-lg-12 col-md-12">
                 <div class="container my-4">
-  <div class="container my-4">
-  <div class="row g-3 justify-content-center text-center">
-    @php
-        $menus = [
-            '4 Pilar Pedoman Gizi Seimbang' => 'Materi tentang 4 pilar: konsumsi beragam, aktif, kebersihan, pemantauan berat badan.',
+                    <div class="container my-4">
+                        <div class="row g-3 justify-content-center text-center">
+                            @php
+                                $menus = [
+                                    '4 Pilar Pedoman Gizi Seimbang' => '1. Mengonsumsi makanan beragam:
 
-            'Gizi Kurang' => "Status gizi kurang menunjukkan tubuh kekurangan energi dan zat gizi penting seperti protein, zat besi, dan vitamin. Pada WUS, hal ini berisiko menyebabkan anemia, gangguan menstruasi, serta masalah kesuburan dan kehamilan berisiko tinggi.
+Ini berarti mengonsumsi berbagai jenis makanan dari berbagai kelompok makanan (karbohidrat, protein, lemak, vitamin, dan mineral) untuk memenuhi kebutuhan nutrisi tubuh.
+
+2. Membiasakan perilaku hidup bersih:
+
+Menjaga kebersihan diri dan lingkungan, termasuk mencuci tangan sebelum makan, dapat mencegah masuknya bakteri dan kuman penyebab penyakit ke dalam tubuh.
+
+3. Melakukan aktivitas fisik:
+
+Aktivitas fisik, seperti olahraga, membantu membakar kalori, menjaga berat badan ideal, dan meningkatkan kesehatan jantung serta metabolisme tubuh.
+
+4. Memantau berat badan:
+
+Memantau berat badan secara teratur membantu mengidentifikasi masalah kelebihan atau kekurangan berat badan, yang dapat menjadi indikator ketidakseimbangan gizi.
+
+',
+
+                                    'Gizi Kurang' => "Status gizi kurang menunjukkan tubuh kekurangan energi dan zat gizi penting seperti protein, zat besi, dan vitamin. Pada WUS, hal ini berisiko menyebabkan anemia, gangguan menstruasi, serta masalah kesuburan dan kehamilan berisiko tinggi.
 ➤ Tindakan & Saran:
 • Konsumsi makanan tinggi energi & protein: ikan, telur, tempe, kacang-kacangan, susu, nasi merah, ubi.
 • Tambahkan minyak sehat (minyak kelapa, zaitun) ke dalam makanan untuk meningkatkan kalori.
@@ -30,7 +46,7 @@
 ➤ Rujukan jika diperlukan:
 Jika IMT sangat rendah (<17) atau disertai gejala lemas, sesak, pusing berlebihan → rujuk ke petugas gizi Puskesmas untuk tatalaksana lanjutan.",
 
-            'Gizi Normal' => "Status gizi normal mencerminkan keseimbangan antara asupan gizi dan kebutuhan tubuh. Ini adalah kondisi ideal bagi WUS untuk merencanakan kehamilan yang sehat, serta menunjang aktivitas dan kesuburan.
+                                    'Gizi Normal' => "Status gizi normal mencerminkan keseimbangan antara asupan gizi dan kebutuhan tubuh. Ini adalah kondisi ideal bagi WUS untuk merencanakan kehamilan yang sehat, serta menunjang aktivitas dan kesuburan.
 ➤ Tindakan & Saran:
 • Lanjutkan pola makan beragam, bergizi seimbang, dan sesuai porsi isi piringku (karbo 1/3, protein hewani/nabati 1/3, sayur & buah 1/3).
 • Minum air putih minimal 8 gelas/hari.
@@ -40,7 +56,7 @@ Jika IMT sangat rendah (<17) atau disertai gejala lemas, sesak, pusing berlebiha
 ➤ Pemantauan:
 Lakukan pemeriksaan berat badan, tinggi, dan lingkar lengan setiap 3 bulan atau sesuai anjuran tenaga kesehatan.",
 
-            'Gizi Lebih' => "Status gizi lebih (overweight/obesitas) meningkatkan risiko gangguan kesuburan, diabetes gestasional, hipertensi dalam kehamilan, dan preeklamsia. Penanganan harus difokuskan pada pengaturan pola makan dan peningkatan aktivitas fisik.
+                                    'Gizi Lebih' => "Status gizi lebih (overweight/obesitas) meningkatkan risiko gangguan kesuburan, diabetes gestasional, hipertensi dalam kehamilan, dan preeklamsia. Penanganan harus difokuskan pada pengaturan pola makan dan peningkatan aktivitas fisik.
 ➤ Tindakan & Saran:
 • Batasi konsumsi makanan tinggi kalori: gorengan, makanan manis, minuman kemasan, makanan cepat saji.
 • Perbanyak sayuran berserat tinggi, buah rendah gula (pepaya, apel, semangka).
@@ -51,14 +67,14 @@ Lakukan pemeriksaan berat badan, tinggi, dan lingkar lengan setiap 3 bulan atau 
 ➤ Rujukan jika diperlukan:
 Jika IMT ≥30 atau disertai tekanan darah tinggi, kadar gula darah tidak stabil → dirujuk ke fasilitas rujukan primer/sekunder untuk pengelolaan komprehensif.",
 
-            'Aktivitas Fisik' => "Aktivitas fisik rutin menjaga keseimbangan energi, memperbaiki mood, meningkatkan kesuburan dan memperkuat imunitas.
+                                    'Aktivitas Fisik' => "Aktivitas fisik rutin menjaga keseimbangan energi, memperbaiki mood, meningkatkan kesuburan dan memperkuat imunitas.
 ➤ Rekomendasi:
 • Jalan kaki 30 menit setiap hari
 • Senam ringan 3x seminggu
 • Peregangan saat bangun pagi dan sebelum tidur
 • Aktivitas rumah tangga (menyapu, mengepel) juga dihitung aktif",
 
-             'Lainnya (Diisi link YouTube)' => "
+                                    'Lainnya (Diisi link YouTube)' => "
 ✅ Video 1: “PENTINGNYA GIZI PRAKONSEPSI BAGI WANITA USIA SUBUR (WUS)!”  
 📺 <a href='https://youtu.be/bQnpFI2X3BE?si=3QD0YOqw-WuhP4m2' target='_blank'>https://youtu.be/bQnpFI2X3BE</a>
 
@@ -67,34 +83,35 @@ Jika IMT ≥30 atau disertai tekanan darah tinggi, kadar gula darah tidak stabil
 
 ✅ Video 3: “Gizi Prakonsepsi dan Perencanaan Gizi Keluarga Dalam Kursus Pranikah”  
 📺 <a href='https://youtu.be/jK29alFfqE4?si=CI4e_LKVdkoi6pbX' target='_blank'>https://youtu.be/jK29alFfqE4</a>
-"
-        ];
-    @endphp
+",
+                                ];
+                            @endphp
 
-    @foreach ($menus as $title => $content)
-      <div class="col-md-4 col-6">
-        <button class="btn btn-primary w-100 py-3" type="button" data-bs-toggle="collapse" data-bs-target="#content{{ $loop->index }}">
-          {{ strtoupper($title) }}
-        </button>
+                            @foreach ($menus as $title => $content)
+                                <div class="col-md-6 col-6">
+                                    <button class="btn btn-primary w-100 py-3" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#content{{ $loop->index }}">
+                                        {{ strtoupper($title) }}
+                                    </button>
 
-        <div class="collapse mt-2" id="content{{ $loop->index }}">
-          <div class="card card-body text-start">
-            @if (Str::contains($content, '<a'))
-              {!! $content !!}
-            @else
-              <pre style="white-space: pre-wrap; font-family: inherit; font-size: 1rem; margin: 0;">
-{!! $content !!}
-              </pre>
-            @endif
-          </div>
-        </div>
-      </div>
-    @endforeach
-  </div>
-</div>
+                                    <div class="collapse mt-2" id="content{{ $loop->index }}">
+                                        <div class="card card-body text-start">
+                                            @if (Str::contains($content, '<a'))
+                                                {!! $content !!}
+                                            @else
+                                                <pre style="white-space: pre-wrap; font-family: inherit; font-size: 1.5rem; margin: 0;">
+                                                  {!! $content !!}
+                                                </pre>
+                                            @endif
+                                        </div>
+                                    </div>
+                                </div>
+                            @endforeach
+                        </div>
+                    </div>
 
+
+                </div>
 
             </div>
-
-        </div>
-    @endsection
+        @endsection

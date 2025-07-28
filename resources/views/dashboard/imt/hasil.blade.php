@@ -70,7 +70,7 @@
                     </div>
                     <div class="card-content">
                         <div class="card-body">
-                            <div class="form-body">
+                            <div class="form-body" style="font-size: 1.5rem;">
                                 {{ $data['penjelasan'] }}
                             </div>
                         </div>
@@ -87,7 +87,7 @@
                     </div>
                     <div class="card-content">
                         <div class="card-body">
-                            <div class="form-body">
+                            <div class="form-body" style="font-size: 1.5rem;">
                                 {{ $data['tindakan'] }}
                             </div>
                         </div>
@@ -104,7 +104,7 @@
                     </div>
                     <div class="card-content">
                         <div class="card-body">
-                            <div class="form-body">
+                            <div class="form-body" style="font-size: 1.5rem;">
                                 {{ $data['rujukan'] }}
                             </div>
                         </div>
@@ -121,7 +121,7 @@
                     </div>
                     <div class="card-content">
                         <div class="card-body">
-                            <div class="form-body">
+                            <div class="form-body" style="font-size: 1.5rem;">
                                 {{ $data['tanda_umum'] }}
                             </div>
                         </div>
@@ -138,7 +138,7 @@
                     </div>
                     <div class="card-content">
                         <div class="card-body">
-                            <div class="form-body">
+                            <div class="form-body" style="font-size: 1.5rem;">
                                 {{ $data['rekomendasi_asupan'] }}
                             </div>
                         </div>
@@ -155,7 +155,7 @@
                     </div>
                     <div class="card-content">
                         <div class="card-body">
-                            <div class="form-body">
+                            <div class="form-body" style="font-size: 1.5rem;">
                                 {{ $data['tindakan_pendukung'] }}
                             </div>
                         </div>
