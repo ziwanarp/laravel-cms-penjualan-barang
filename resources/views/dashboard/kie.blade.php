@@ -89,24 +89,14 @@ Jika IMT ≥30 atau disertai tekanan darah tinggi, kadar gula darah tidak stabil
 
                             @foreach ($menus as $title => $content)
                                 <div class="col-md-6 col-6">
-                                    <button class="btn btn-primary w-100 py-3" type="button" data-bs-toggle="collapse"
-                                        data-bs-target="#content{{ $loop->index }}">
+                                    <button class="btn btn-primary w-100 py-3"
+                                        type="button"
+                                        onclick="showModal(`{{ addslashes(strtoupper($title)) }}`, `{!! addslashes(nl2br(e($content))) !!}`)">
                                         {{ strtoupper($title) }}
                                     </button>
-
-                                    <div class="collapse mt-2" id="content{{ $loop->index }}">
-                                        <div class="card card-body text-start">
-                                            @if (Str::contains($content, '<a'))
-                                                {!! $content !!}
-                                            @else
-                                                <pre style="white-space: pre-wrap; font-family: inherit; font-size: 1.5rem; margin: 0;">
-                                                  {!! $content !!}
-                                                </pre>
-                                            @endif
-                                        </div>
-                                    </div>
                                 </div>
                             @endforeach
+
                         </div>
                     </div>
 
@@ -114,4 +104,29 @@ Jika IMT ≥30 atau disertai tekanan darah tinggi, kadar gula darah tidak stabil
                 </div>
 
             </div>
+            <!-- Modal Template -->
+<div class="modal fade" id="menuModal" tabindex="-1" aria-labelledby="menuModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg modal-dialog-scrollable">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="menuModalLabel">Judul</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Tutup"></button>
+      </div>
+      <div class="modal-body" id="menuModalContent" style="font-size: 1.5rem;"></div>
+    </div>
+  </div>
+</div>
+
+    <script>
+        function showModal(title, content) {
+            const modalTitle = document.getElementById('menuModalLabel');
+            const modalContent = document.getElementById('menuModalContent');
+
+            modalTitle.innerHTML = title;
+            modalContent.innerHTML = content;
+
+            const modal = new bootstrap.Modal(document.getElementById('menuModal'));
+            modal.show();
+        }
+    </script>
         @endsection

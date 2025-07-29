@@ -169,6 +169,7 @@ class ImtController extends Controller
 
         // Simpan data
         $validatedData['usia_subur']                = $usia_subur;
+        $validatedData['lila']                      = $request->lila;
 
         $validatedData['penjelasan']                = $penjelasan ?? null;
         $validatedData['tindakan']                  = $tindakan ?? null;

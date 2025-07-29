@@ -15,13 +15,13 @@
 
             <div class="row">
 
-                <div class="col-6 col-lg-6 col-md-6">
+                <div class="col-12 col-lg-12 col-md-12">
                     <div class="card">
                         <img src="{{ asset('assets/images/db1.jpeg') }}" alt="">
                     </div>
                 </div>
 
-                <div class="col-6 col-lg-6 col-md-6">
+                {{-- <div class="col-6 col-lg-6 col-md-6">
                     <div class="card">
                         <img src="{{ asset('assets/images/db2.jpeg') }}" alt="">
                     </div>
@@ -37,7 +37,7 @@
                     <div class="card">
                         <img src="{{ asset('assets/images/db4.jpeg') }}" alt="">
                     </div>
-                </div>
+                </div> --}}
 
             </div>
     

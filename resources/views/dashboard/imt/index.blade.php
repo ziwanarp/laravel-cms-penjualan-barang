@@ -15,7 +15,7 @@
 <section id="basic-horizontal-layouts">
     <div class="row match-height" >
         <div class="col-md-7 col-12">
-            <div class="card " style="background-image: linear-gradient(rgba(128,128,128,0.5), rgba(128,128,128,0.5)), url('{{ asset('assets/images/bglogin.jpeg') }}'); background-size: cover; background-position: center;"
+            <div class="card " style="background-image: linear-gradient(rgba(128,128,128,0.5), rgba(128,128,128,0.5)), url('{{ asset('assets/images/db2.jpeg') }}'); background-size: cover; background-position: center;"
 >
                 <div class="card-header">
                     <h4 class="card-title">Input Data Antropometri</h4>
