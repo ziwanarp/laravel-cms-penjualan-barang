@@ -86,7 +86,37 @@
                                 <div class="card-content">
                                     <div class="card-body">
                                         <div class="form-body" style="font-size: 1.5rem;">
-                                            {!! $data['penjelasan'] !!}
+                                            @php
+                                                // Fungsi renderList didefinisikan inline
+                                                if (!function_exists('renderList')) {
+                                                    function renderList($text)
+                                                    {
+                                                        if (preg_match('/\d+\.\s/', $text)) {
+                                                            $items = preg_split('/(?=\d+\.\s)/', $text);
+                                                            echo '<ol style="padding-left: 1.5rem;">';
+                                                            foreach ($items as $item) {
+                                                                $clean = trim(preg_replace('/^\d+\.\s/', '', $item));
+                                                                if (!empty($clean)) {
+                                                                    echo "<li style='margin-bottom:0.75rem;'>$clean</li>";
+                                                                }
+                                                            }
+                                                            echo '</ol>';
+                                                        } else {
+                                                            $items = preg_split('/•\s*/', $text);
+                                                            echo '<ul style="padding-left: 1.5rem;">';
+                                                            foreach ($items as $item) {
+                                                                $clean = trim($item);
+                                                                if (!empty($clean)) {
+                                                                    echo "<li style='margin-bottom:0.5rem;'>$clean</li>";
+                                                                }
+                                                            }
+                                                            echo '</ul>';
+                                                        }
+                                                    }
+                                                }
+
+                                                renderList($data['penjelasan']);
+                                            @endphp
                                         </div>
                                     </div>
                                 </div>
@@ -157,7 +187,37 @@
                                 <div class="card-content">
                                     <div class="card-body">
                                         <div class="form-body" style="font-size: 1.5rem;">
-                                            {!! $data['rujukan'] !!}
+                                             @php
+                                                // Fungsi renderList didefinisikan inline
+                                                if (!function_exists('renderList')) {
+                                                    function renderList($text)
+                                                    {
+                                                        if (preg_match('/\d+\.\s/', $text)) {
+                                                            $items = preg_split('/(?=\d+\.\s)/', $text);
+                                                            echo '<ol style="padding-left: 1.5rem;">';
+                                                            foreach ($items as $item) {
+                                                                $clean = trim(preg_replace('/^\d+\.\s/', '', $item));
+                                                                if (!empty($clean)) {
+                                                                    echo "<li style='margin-bottom:0.75rem;'>$clean</li>";
+                                                                }
+                                                            }
+                                                            echo '</ol>';
+                                                        } else {
+                                                            $items = preg_split('/•\s*/', $text);
+                                                            echo '<ul style="padding-left: 1.5rem;">';
+                                                            foreach ($items as $item) {
+                                                                $clean = trim($item);
+                                                                if (!empty($clean)) {
+                                                                    echo "<li style='margin-bottom:0.5rem;'>$clean</li>";
+                                                                }
+                                                            }
+                                                            echo '</ul>';
+                                                        }
+                                                    }
+                                                }
+
+                                                renderList($data['rujukan']);
+                                            @endphp
                                         </div>
                                     </div>
                                 </div>
@@ -174,7 +234,37 @@
                                 <div class="card-content">
                                     <div class="card-body">
                                         <div class="form-body" style="font-size: 1.5rem;">
-                                            @php renderList($data['tanda_umum']) @endphp
+                                             @php
+                                                // Fungsi renderList didefinisikan inline
+                                                if (!function_exists('renderList')) {
+                                                    function renderList($text)
+                                                    {
+                                                        if (preg_match('/\d+\.\s/', $text)) {
+                                                            $items = preg_split('/(?=\d+\.\s)/', $text);
+                                                            echo '<ol style="padding-left: 1.5rem;">';
+                                                            foreach ($items as $item) {
+                                                                $clean = trim(preg_replace('/^\d+\.\s/', '', $item));
+                                                                if (!empty($clean)) {
+                                                                    echo "<li style='margin-bottom:0.75rem;'>$clean</li>";
+                                                                }
+                                                            }
+                                                            echo '</ol>';
+                                                        } else {
+                                                            $items = preg_split('/•\s*/', $text);
+                                                            echo '<ul style="padding-left: 1.5rem;">';
+                                                            foreach ($items as $item) {
+                                                                $clean = trim($item);
+                                                                if (!empty($clean)) {
+                                                                    echo "<li style='margin-bottom:0.5rem;'>$clean</li>";
+                                                                }
+                                                            }
+                                                            echo '</ul>';
+                                                        }
+                                                    }
+                                                }
+
+                                                renderList($data['tanda_umum']);
+                                            @endphp
                                         </div>
                                     </div>
                                 </div>
@@ -191,7 +281,37 @@
                                 <div class="card-content">
                                     <div class="card-body">
                                         <div class="form-body" style="font-size: 1.5rem;">
-                                            @php renderList($data['rekomendasi_asupan']) @endphp
+                                             @php
+                                                // Fungsi renderList didefinisikan inline
+                                                if (!function_exists('renderList')) {
+                                                    function renderList($text)
+                                                    {
+                                                        if (preg_match('/\d+\.\s/', $text)) {
+                                                            $items = preg_split('/(?=\d+\.\s)/', $text);
+                                                            echo '<ol style="padding-left: 1.5rem;">';
+                                                            foreach ($items as $item) {
+                                                                $clean = trim(preg_replace('/^\d+\.\s/', '', $item));
+                                                                if (!empty($clean)) {
+                                                                    echo "<li style='margin-bottom:0.75rem;'>$clean</li>";
+                                                                }
+                                                            }
+                                                            echo '</ol>';
+                                                        } else {
+                                                            $items = preg_split('/•\s*/', $text);
+                                                            echo '<ul style="padding-left: 1.5rem;">';
+                                                            foreach ($items as $item) {
+                                                                $clean = trim($item);
+                                                                if (!empty($clean)) {
+                                                                    echo "<li style='margin-bottom:0.5rem;'>$clean</li>";
+                                                                }
+                                                            }
+                                                            echo '</ul>';
+                                                        }
+                                                    }
+                                                }
+
+                                                renderList($data['rekomendasi_asupan']);
+                                            @endphp
                                         </div>
                                     </div>
                                 </div>
@@ -208,7 +328,37 @@
                                 <div class="card-content">
                                     <div class="card-body">
                                         <div class="form-body" style="font-size: 1.5rem;">
-                                            @php renderList($data['tindakan_pendukung']) @endphp
+                                             @php
+                                                // Fungsi renderList didefinisikan inline
+                                                if (!function_exists('renderList')) {
+                                                    function renderList($text)
+                                                    {
+                                                        if (preg_match('/\d+\.\s/', $text)) {
+                                                            $items = preg_split('/(?=\d+\.\s)/', $text);
+                                                            echo '<ol style="padding-left: 1.5rem;">';
+                                                            foreach ($items as $item) {
+                                                                $clean = trim(preg_replace('/^\d+\.\s/', '', $item));
+                                                                if (!empty($clean)) {
+                                                                    echo "<li style='margin-bottom:0.75rem;'>$clean</li>";
+                                                                }
+                                                            }
+                                                            echo '</ol>';
+                                                        } else {
+                                                            $items = preg_split('/•\s*/', $text);
+                                                            echo '<ul style="padding-left: 1.5rem;">';
+                                                            foreach ($items as $item) {
+                                                                $clean = trim($item);
+                                                                if (!empty($clean)) {
+                                                                    echo "<li style='margin-bottom:0.5rem;'>$clean</li>";
+                                                                }
+                                                            }
+                                                            echo '</ul>';
+                                                        }
+                                                    }
+                                                }
+
+                                                renderList($data['tindakan_pendukung']);
+                                            @endphp
                                         </div>
                                     </div>
                                 </div>
