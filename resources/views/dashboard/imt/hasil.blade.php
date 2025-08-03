@@ -32,8 +32,13 @@
                                         <div class="form-body">
                                             <div class="row">
                                                 <div class="col-sm-12 d-flex justify-content-center mb-3">
-                                                    <img src="{{ asset('assets/images/hasil.png') }}" alt=""
-                                                        class="w-50">
+                                                    @if ($data['status2'] == 'Gizi Kurang')
+                                                        <img src="{{ asset('assets/images/gizi_kurang.jpeg') }}" alt="" class="w-50">
+                                                    @elseif ($data['status2'] == 'Gizi normal')
+                                                        <img src="{{ asset('assets/images/gizi_normal.jpeg') }}" alt="" class="w-50">
+                                                    @else
+                                                        <img src="{{ asset('assets/images/gizi_lebih.jpeg') }}" alt="" class="w-50">
+                                                    @endif
                                                 </div>
                                                 <div class="col-sm-12 d-flex justify-content-center">
                                                     <button type="submit" class="btn btn-success btn-xl me-1 mb-1">IMT
@@ -50,6 +55,25 @@
                                             </div>
                                         </div>
                                     </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Step 2: Grafik -->
+                <div class="step d-none">
+                    <div class="col-md-12 col-12">
+                        <div class="card">
+                            <div class="card-header">
+                                <h4 class="card-title">Rekomendasi Gizi <b
+                                        class="text-danger">{{ $data['nama'] }}</b></h4>
+                            </div>
+                            <div class="card-content">
+                                <div class="card-body">
+                                    <div class="form-body d-flex justify-content-center">
+                                        <img src="{{ asset('assets/images/rekomendasi.jpeg') }}" alt="" class="w-50">
+                                    </div>
                                 </div>
                             </div>
                         </div>

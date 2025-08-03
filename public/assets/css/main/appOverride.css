@@ -1,0 +1,54 @@
+/* Menu sidebar aktif - warna ungu pastel */
+.sidebar-wrapper .menu .sidebar-item.active > .sidebar-link {
+    background-color: #E6A8D7 !important;
+    color: #ffffff !important;
+}
+
+/* Menu sidebar default */
+.sidebar-wrapper .menu .sidebar-link {
+    align-items: center !important;
+    border-radius: 0.5rem !important;
+    color: #4e4e4e !important; /* warna teks default */
+    display: flex !important;
+    font-size: 1rem !important;
+    padding: 0.7rem 1rem !important;
+    text-decoration: none !important;
+    transition: all 0.3s ease !important;
+}
+
+/* Hover effect untuk menu sidebar */
+.sidebar-wrapper .menu .sidebar-link:hover {
+    background-color: #F5E1FD !important; /* lilac muda */
+    color: #2e2e2e !important;
+}
+
+body {
+    background-color: #F5E1FD;
+}
+
+.bg-primary {
+    --bs-bg-opacity: 1;
+    background-color: #E6A8D7 !important;
+}
+
+.btn-primary {
+    --bs-btn-color: #fff !important;
+    --bs-btn-bg: #E6A8D7 !important;
+    --bs-btn-border-color: #E6A8D7 !important;
+
+    --bs-btn-hover-color: #fff !important;
+    --bs-btn-hover-bg: #d18ec2 !important; /* sedikit lebih gelap dari E6A8D7 */
+    --bs-btn-hover-border-color: #cc86bc !important;
+
+    --bs-btn-focus-shadow-rgb: 230, 168, 215 !important;
+
+    --bs-btn-active-color: #fff !important;
+    --bs-btn-active-bg: #c27cb2 !important; /* lebih gelap lagi */
+    --bs-btn-active-border-color: #bb74ac !important;
+    --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125) !important;
+
+    --bs-btn-disabled-color: #fff !important;
+    --bs-btn-disabled-bg: #E6A8D7 !important;
+    --bs-btn-disabled-border-color: #E6A8D7 !important;
+}
+

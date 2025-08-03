@@ -16,86 +16,262 @@
                 <div class="container my-4">
                     <div class="container my-4">
                         <div class="row g-3 justify-content-center text-center">
+
                             @php
-                                $menus = [
-                                    '4 Pilar Pedoman Gizi Seimbang' => '1. Mengonsumsi makanan beragam:
+                                $materi = [
+                                    'Edukasi' => [
+                                                'normal' => 'Status gizi Anda berada dalam kategori **normal**. Ini berarti asupan makanan dan aktivitas fisik Anda sudah seimbang. Namun, penting untuk tetap menjaga pola hidup sehat agar kondisi ini tetap terjaga.  
+                                                Beberapa tips:
+                                                - Konsumsi makanan bergizi seimbang (karbohidrat, protein, lemak sehat, sayur & buah).
+                                                - Minum air putih minimal 8 gelas per hari.
+                                                - Lakukan aktivitas fisik minimal 30 menit sehari.
+                                                - Istirahat cukup dan kelola stres.
 
-Ini berarti mengonsumsi berbagai jenis makanan dari berbagai kelompok makanan (karbohidrat, protein, lemak, vitamin, dan mineral) untuk memenuhi kebutuhan nutrisi tubuh.
+                                                Pantau berat badan dan tinggi badan secara berkala untuk memastikan kondisi tetap ideal.',
 
-2. Membiasakan perilaku hidup bersih:
+                                                    'kurang' => 'Status gizi Anda berada dalam kategori **kurang**. Ini berarti tubuh Anda mungkin kekurangan asupan energi atau zat gizi penting.  
+                                                Beberapa langkah yang dapat dilakukan:
+                                                - Tingkatkan konsumsi makanan tinggi kalori dan protein seperti telur, susu, daging tanpa lemak, dan kacang-kacangan.
+                                                - Makan lebih sering, misalnya 5–6 kali sehari dalam porsi kecil.
+                                                - Sertakan camilan sehat seperti buah kering, keju, atau roti gandum.
+                                                - Periksa apakah ada gangguan penyerapan nutrisi (misalnya anemia, infeksi saluran cerna, dll).
+                                                - Konsultasikan dengan petugas kesehatan atau ahli gizi jika berat badan sulit naik.
 
-Menjaga kebersihan diri dan lingkungan, termasuk mencuci tangan sebelum makan, dapat mencegah masuknya bakteri dan kuman penyebab penyakit ke dalam tubuh.
+                                                Tujuan utama adalah meningkatkan massa tubuh secara sehat dan terkontrol.',
 
-3. Melakukan aktivitas fisik:
+                                                    'lebih' => 'Status gizi Anda berada dalam kategori **lebih** (berat badan berlebih atau obesitas ringan). Ini berarti ada kelebihan energi yang disimpan dalam tubuh dalam bentuk lemak.  
+                                                Langkah-langkah yang dapat membantu:
+                                                - Kurangi makanan tinggi gula, garam, dan lemak jenuh (misalnya gorengan, makanan cepat saji, minuman manis).
+                                                - Perbanyak konsumsi sayuran dan buah segar.
+                                                - Lakukan olahraga teratur minimal 3–5 kali seminggu, seperti jalan cepat, bersepeda, atau berenang.
+                                                - Hindari makan sambil menonton TV atau bermain gadget.
+                                                - Usahakan tidur cukup dan hindari stres berlebih karena bisa memicu makan emosional.
 
-Aktivitas fisik, seperti olahraga, membantu membakar kalori, menjaga berat badan ideal, dan meningkatkan kesehatan jantung serta metabolisme tubuh.
+                                                Dengan pola hidup sehat yang konsisten, Anda bisa menurunkan berat badan secara bertahap dan mencegah penyakit terkait obesitas seperti diabetes dan hipertensi.',
+                                                ],
 
-4. Memantau berat badan:
+                                    'Asupan' => [
+                                                'normal' => 'Karena status gizi Anda **normal**, penting untuk mempertahankan pola makan seimbang agar tubuh tetap sehat dan bertenaga.  
+                                                Rekomendasi asupan nutrisi:
+                                                - Karbohidrat kompleks: nasi merah, kentang, ubi, oatmeal.
+                                                - Protein: ikan, ayam tanpa kulit, telur, tahu, tempe.
+                                                - Sayuran dan buah-buahan beragam warna setiap hari.
+                                                - Susu rendah lemak atau produk olahan susu.
+                                                - Lemak sehat: alpukat, kacang-kacangan, minyak zaitun.
 
-Memantau berat badan secara teratur membantu mengidentifikasi masalah kelebihan atau kekurangan berat badan, yang dapat menjadi indikator ketidakseimbangan gizi.
+                                                Pastikan kebutuhan energi harian tercukupi dan jangan melewatkan sarapan.',
 
-',
+                                                    'kurang' => 'Status gizi Anda **kurang**, sehingga tubuh membutuhkan tambahan energi dan nutrisi untuk memperbaiki massa tubuh dan fungsi organ.  
+                                                Rekomendasi asupan nutrisi:
+                                                - Karbohidrat tinggi energi: nasi putih, roti, pasta, kentang.
+                                                - Protein tinggi: telur, daging, ikan, susu full cream, kacang-kacangan.
+                                                - Camilan sehat di antara waktu makan utama, seperti roti isi, pisang, atau kacang rebus.
+                                                - Konsumsi minuman bergizi seperti susu atau smoothies buah plus yogurt.
+                                                - Suplemen zat besi dan vitamin (jika direkomendasikan oleh tenaga medis).
 
-                                    'Gizi Kurang' => "Status gizi kurang menunjukkan tubuh kekurangan energi dan zat gizi penting seperti protein, zat besi, dan vitamin. Pada WUS, hal ini berisiko menyebabkan anemia, gangguan menstruasi, serta masalah kesuburan dan kehamilan berisiko tinggi.
-➤ Tindakan & Saran:
-• Konsumsi makanan tinggi energi & protein: ikan, telur, tempe, kacang-kacangan, susu, nasi merah, ubi.
-• Tambahkan minyak sehat (minyak kelapa, zaitun) ke dalam makanan untuk meningkatkan kalori.
-• Minum tablet tambah darah (TTD) sesuai anjuran (1 tablet/minggu atau setiap hari jika anemia).
-• Istirahat cukup dan hindari stres berlebihan.
-• Rutin kontrol ke tenaga kesehatan dan pantau kenaikan berat badan setiap bulan.
-➤ Rujukan jika diperlukan:
-Jika IMT sangat rendah (<17) atau disertai gejala lemas, sesak, pusing berlebihan → rujuk ke petugas gizi Puskesmas untuk tatalaksana lanjutan.",
+                                                Konsistensi dan frekuensi makan yang cukup sangat penting untuk memperbaiki gizi kurang.',
 
-                                    'Gizi Normal' => "Status gizi normal mencerminkan keseimbangan antara asupan gizi dan kebutuhan tubuh. Ini adalah kondisi ideal bagi WUS untuk merencanakan kehamilan yang sehat, serta menunjang aktivitas dan kesuburan.
-➤ Tindakan & Saran:
-• Lanjutkan pola makan beragam, bergizi seimbang, dan sesuai porsi isi piringku (karbo 1/3, protein hewani/nabati 1/3, sayur & buah 1/3).
-• Minum air putih minimal 8 gelas/hari.
-• Lakukan aktivitas fisik rutin: jalan kaki, senam ringan, yoga, dll.
-• Hindari makanan ultra-proses tinggi gula, garam, lemak.
-• Konsumsi TTD jika belum hamil, atau sesuai program kesehatan reproduksi.
-➤ Pemantauan:
-Lakukan pemeriksaan berat badan, tinggi, dan lingkar lengan setiap 3 bulan atau sesuai anjuran tenaga kesehatan.",
+                                                    'lebih' => 'Status gizi Anda **lebih**, sehingga disarankan untuk mengatur pola makan yang lebih rendah kalori dan lemak, namun tetap bergizi.  
+                                                Rekomendasi asupan nutrisi:
+                                                - Ganti nasi putih dengan nasi merah atau karbohidrat berserat tinggi lainnya.
+                                                - Pilih sumber protein rendah lemak seperti ayam tanpa kulit, ikan kukus, tahu, dan tempe.
+                                                - Hindari makanan tinggi gula dan lemak jenuh, seperti gorengan, makanan cepat saji, dan minuman manis.
+                                                - Konsumsi sayuran hijau dan buah sebagai pengganti camilan.
+                                                - Perbanyak minum air putih dan kurangi konsumsi minuman bersoda atau sirup.
+                                                - Bila perlu, konsultasikan suplemen penunjang metabolisme dengan tenaga medis.
 
-                                    'Gizi Lebih' => "Status gizi lebih (overweight/obesitas) meningkatkan risiko gangguan kesuburan, diabetes gestasional, hipertensi dalam kehamilan, dan preeklamsia. Penanganan harus difokuskan pada pengaturan pola makan dan peningkatan aktivitas fisik.
-➤ Tindakan & Saran:
-• Batasi konsumsi makanan tinggi kalori: gorengan, makanan manis, minuman kemasan, makanan cepat saji.
-• Perbanyak sayuran berserat tinggi, buah rendah gula (pepaya, apel, semangka).
-• Ganti nasi putih dengan nasi merah, oats, jagung, dan hindari porsi berlebih.
-• Rutin olahraga 3–5 kali/minggu selama 30 menit.
-• Hindari minuman manis dan gula tambahan berlebih (<4 sdm/hari).
-• Konsultasikan dengan tenaga gizi jika mengalami gangguan siklus haid atau kelelahan.
-➤ Rujukan jika diperlukan:
-Jika IMT ≥30 atau disertai tekanan darah tinggi, kadar gula darah tidak stabil → dirujuk ke fasilitas rujukan primer/sekunder untuk pengelolaan komprehensif.",
+                                                Tujuan utama adalah menciptakan defisit kalori sehat dan menjaga keseimbangan nutrisi.',
+                                                ],
 
-                                    'Aktivitas Fisik' => "Aktivitas fisik rutin menjaga keseimbangan energi, memperbaiki mood, meningkatkan kesuburan dan memperkuat imunitas.
-➤ Rekomendasi:
-• Jalan kaki 30 menit setiap hari
-• Senam ringan 3x seminggu
-• Peregangan saat bangun pagi dan sebelum tidur
-• Aktivitas rumah tangga (menyapu, mengepel) juga dihitung aktif",
 
-                                    'Lainnya (Diisi link YouTube)' => "
-✅ Video 1: “PENTINGNYA GIZI PRAKONSEPSI BAGI WANITA USIA SUBUR (WUS)!”  
-📺 <a href='https://youtu.be/bQnpFI2X3BE?si=3QD0YOqw-WuhP4m2' target='_blank'>https://youtu.be/bQnpFI2X3BE</a>
+                                    'Artikel' => [
+                                                'fakta' => "✅ **Fakta Ilmiah tentang Gizi Wanita Usia Subur (WUS)**
 
-✅ Video 2: “Pentingnya Edukasi Gizi Pada Wanita Usia Subur”  
-📺 <a href='https://youtu.be/lSyKBy8CY88?si=KqTyISyND7F9LGcg' target='_blank'>https://youtu.be/lSyKBy8CY88</a>
+                                                1. **Kebutuhan Zat Besi Meningkat**  
+                                                Wanita usia subur membutuhkan asupan zat besi lebih tinggi karena mengalami menstruasi setiap bulan. Kekurangan zat besi dapat menyebabkan anemia yang berdampak buruk pada kesuburan dan kehamilan.
 
-✅ Video 3: “Gizi Prakonsepsi dan Perencanaan Gizi Keluarga Dalam Kursus Pranikah”  
-📺 <a href='https://youtu.be/jK29alFfqE4?si=CI4e_LKVdkoi6pbX' target='_blank'>https://youtu.be/jK29alFfqE4</a>
-",
+                                                2. **Asam Folat Wajib Dikonsumsi Sejak Sebelum Hamil**  
+                                                WHO dan berbagai badan kesehatan menyarankan wanita mengonsumsi asam folat minimal 400 mcg/hari bahkan sebelum hamil untuk mencegah cacat tabung saraf pada janin.
+
+                                                3. **Status Gizi Prakonsepsi Menentukan Kehamilan Sehat**  
+                                                Berat badan yang terlalu rendah atau terlalu tinggi saat prakonsepsi dapat meningkatkan risiko komplikasi seperti kelahiran prematur, bayi berat lahir rendah (BBLR), atau preeklamsia.
+
+                                                4. **Protein dan Mikronutrien Mempengaruhi Keseimbangan Hormon**  
+                                                Asupan protein dan vitamin (seperti vitamin D dan B12) berperan dalam produksi hormon yang mengatur siklus menstruasi dan ovulasi.
+
+                                                5. **Gizi Buruk di Masa Remaja Memengaruhi Generasi Berikutnya**  
+                                                Studi menunjukkan bahwa malnutrisi pada remaja wanita berdampak pada keturunan mereka, menyebabkan risiko stunting dan gangguan perkembangan anak lebih tinggi.
+
+                                                Sumber: WHO, UNICEF, Nutrition International, Kemenkes RI.",
+                                                'mitos' => "Salah satu mitos yang banyak dipercaya adalah bahwa nanas bisa menyebabkan keguguran kandungan pada perempuan. Studi yang digalang Girl Effect mendapati perempuan di kawasan urban jarang menyarap pada pagi hari dan mengkonsumsi 'makanan tak bergizi' sepanjang hari. Celakanya kebanyakan meyakini pola makan semacam itu cukup untuk memenuhi kebutuhan gizi sehari-hari.
+
+                                                Untuk meningkatkan asupan gizi pada kaum perempuan, Girl Effect meluncurkan aplikasi ponsel yang mencoba membangkitkan kesadaran makanan sehat lewat konten interaktif. Jika berhasil, aplikasi yang saat ini baru diluncurkan di Indonesia itu akan diujicoba di Filipina dan Nigeria.
+
+                                                Sejumlah pakar mengatakan Indonesia menghadapi 'beban ganda malnutrisi' menyusul tingginya angka penduduk yang mengalami gejala kekerdilan dan kegemukan. Marion Roche, pakar kesehatan remaja di Nutrition International, mengatakan minimnya pengetahuian gizi di kalangan perempuan mengejutkan, terutama jika mengingat tingkat gizi balita yang banyak membaik.
+
+                                                'Remaja perempuan tidak mengerti apa itu kesehatan. Kesehatan dipahami dengan tidak adanya penyakit,' ujarnya. 'Kita harus memberikan mereka pengetahuan tentang bagaimana membuat pilihan yang sehat.'.",
+                                            ],
+                                    'Rujukan' => [
+                                        'faskes' => 'Informasi Faskes terdekat .',
+                                    ],
                                 ];
                             @endphp
 
-                            @foreach ($menus as $title => $content)
-                                <div class="col-md-6 col-6">
-                                    <button class="btn btn-primary w-100 py-3"
-                                        type="button"
-                                        onclick="showModal(`{{ addslashes(strtoupper($title)) }}`, `{!! addslashes(nl2br(e($content))) !!}`)">
-                                        {{ strtoupper($title) }}
-                                    </button>
+                            <style>
+                                .btn-outline-success {
+                                    border-color: #32CD32;
+                                    color: #32CD32;
+                                }
+
+                                .btn-outline-success:hover {
+                                    background-color: #32CD32;
+                                    color: #fff;
+                                }
+
+                                .btn-outline-primary {
+                                    border-color: #00BFFF;
+                                    color: #00BFFF;
+                                }
+
+                                .btn-outline-primary:hover {
+                                    background-color: #00BFFF;
+                                    color: #fff;
+                                }
+
+                                .btn-outline-info {
+                                    border-color: #8A2BE2;
+                                    color: #8A2BE2;
+                                }
+
+                                .btn-outline-info:hover {
+                                    background-color: #8A2BE2;
+                                    color: #fff;
+                                }
+
+                                .btn-outline-warning {
+                                    border-color: #FF00FF;
+                                    color: #FF00FF;
+                                }
+
+                                .btn-outline-warning:hover {
+                                    background-color: #FF00FF;
+                                    color: #fff;
+                                }
+
+                                .btn-outline-secondary {
+                                    border-color: gray;
+                                    color: gray;
+                                }
+
+                                .btn-outline-secondary:hover {
+                                    background-color: gray;
+                                    color: #fff;
+                                }
+
+                                .border-danger {
+                                    border-width: 3px !important;
+                                }
+
+                                .rounded-4 {
+                                    border-radius: 1rem;
+                                }
+
+                                h4 {
+                                    font-weight: bold;
+                                    color: white;
+                                }
+                            </style>
+
+                            <div class="container my-5 text-white">
+                                <div class="row gy-4 justify-content-center">
+
+                                    {{-- EDUKASI --}}
+                                    <div class="col-12 col-md-6">
+                                        <div class="p-4 border border-danger rounded-4">
+                                            <h4 class="text-center text-black">Edukasi</h4>
+                                            <div class="d-flex justify-content-around mt-3">
+                                                @foreach (['normal', 'kurang', 'lebih'] as $item)
+                                                    <button class="btn btn-xl btn-primary"
+                                                        onclick="showModal('Edukasi - {{ ucfirst($item) }}', `{!! nl2br($materi['Edukasi'][$item]) !!}`)">
+                                                        {{ ucfirst($item) }}
+                                                    </button>
+                                                @endforeach
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    {{-- ASUPAN NUTRISI --}}
+                                    <div class="col-12 col-md-6">
+                                        <div class="p-4 border border-danger rounded-4">
+                                            <h4 class="text-center text-black">Asupan Nutrisi & Suplemen</h4>
+                                            <div class="d-flex justify-content-around mt-3">
+                                                @foreach (['normal', 'kurang', 'lebih'] as $item)
+                                                    <button class="btn btn-xl btn-primary"
+                                                        onclick="showModal('Asupan - {{ ucfirst($item) }}', `{!! nl2br($materi['Asupan'][$item]) !!}`)">
+                                                        {{ ucfirst($item) }}
+                                                    </button>
+                                                @endforeach
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    {{-- VIDEO GIZI --}}
+                                    <div class="col-12 col-md-6">
+                                        <div class="p-4 border border-danger rounded-4">
+                                            <h4 class="text-center text-black">Video Gizi</h4>
+                                            <div class="text-center mt-3">
+                                                <button class="btn btn-xl btn-primary"
+                                                    onclick="showYoutubeModal('Video Gizi', [
+                                                            'https://www.youtube.com/embed/bQnpFI2X3BE',
+                                                            'https://www.youtube.com/embed/lSyKBy8CY88',
+                                                            'https://www.youtube.com/embed/jK29alFfqE4',
+                                                            'https://www.youtube.com/watch?v=Ifit0o20zqw',
+                                                            'https://www.youtube.com/live/ziQlrL51j6k?si=TWiVclszHeiMxO5z',
+                                                            'https://www.youtube.com/JvEs4ZT7e6Y?si=IRSJhhLVpPhkJbWR',
+                                                            'https://www.youtube.com/zqpinGFvivg?si=tSyC8g631-tQRXbF',
+                                                            'https://www.youtube.com/1bcI39ssaaw?si=8hkZVcGBpYY8NOfa',
+                                                            'https://www.youtube.com/8WQHKD8-ooc?si=EGFN1IUOneTfTBkL',
+                                                        ])">
+                                                    Link YouTube
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+
+
+                                    {{-- ARTIKEL --}}
+                                    <div class="col-12 col-md-6">
+                                        <div class="p-4 border border-danger rounded-4">
+                                            <h4 class="text-center text-black">Artikel</h4>
+                                            <div class="d-flex justify-content-around mt-3">
+                                                <button class="btn btn-xl btn-primary"
+                                                    onclick="showModal('Artikel - Fakta', `{!! nl2br($materi['Artikel']['fakta']) !!}`)">
+                                                    Fakta
+                                                </button>
+                                                <button class="btn btn-xl btn-primary"
+                                                    onclick="showModal('Artikel - Mitos', `{!! nl2br($materi['Artikel']['mitos']) !!}`)">
+                                                    Mitos
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    {{-- RUJUKAN --}}
+                                    <div class="col-12 col-md-6">
+                                        <div class="p-4 border border-danger rounded-4">
+                                            <h4 class="text-center text-black">Rujukan</h4>
+                                            <div class="text-center mt-3">
+                                                <button class="btn btn-xl btn-primary"
+                                                    onclick="showModal('Faskes Terdekat', `{!! nl2br($materi['Rujukan']['faskes']) !!}`)">
+                                                    Faskes Terdekat
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+
+
                                 </div>
-                            @endforeach
+                            </div>
 
                         </div>
                     </div>
@@ -104,29 +280,109 @@ Jika IMT ≥30 atau disertai tekanan darah tinggi, kadar gula darah tidak stabil
                 </div>
 
             </div>
-            <!-- Modal Template -->
-<div class="modal fade" id="menuModal" tabindex="-1" aria-labelledby="menuModalLabel" aria-hidden="true">
-  <div class="modal-dialog modal-lg modal-dialog-scrollable">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h5 class="modal-title" id="menuModalLabel">Judul</h5>
-        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Tutup"></button>
-      </div>
-      <div class="modal-body" id="menuModalContent" style="font-size: 1.5rem;"></div>
-    </div>
-  </div>
-</div>
+            {{-- MODAL --}}
+            <div class="modal fade" id="menuModal" tabindex="-1" aria-labelledby="menuModalLabel" aria-hidden="true">
+                <div class="modal-dialog modal-lg modal-dialog-scrollable">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="menuModalLabel">Judul</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Tutup"></button>
+                        </div>
+                        <div class="modal-body" id="menuModalContent" style="font-size: 1.3rem;"></div>
+                    </div>
+                </div>
+            </div>
 
-    <script>
-        function showModal(title, content) {
-            const modalTitle = document.getElementById('menuModalLabel');
-            const modalContent = document.getElementById('menuModalContent');
+            {{-- Modal Video --}}
+            <div class="modal fade" id="ytModal" tabindex="-1" aria-labelledby="ytModalLabel" aria-hidden="true">
+                <div class="modal-dialog modal-xl modal-dialog-centered">
+                    <div class="modal-content bg-dark text-white">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="ytModalLabel">Judul Video</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Tutup"></button>
+                    </div>
+                    <div class="modal-body">
+                        <div id="ytVideoList" class="mb-4"></div>
+                        <div class="ratio ratio-16x9">
+                        <iframe id="ytIframe" src="" frameborder="0" allowfullscreen></iframe>
+                        </div>
+                    </div>
+                    </div>
+                </div>
+            </div>
 
-            modalTitle.innerHTML = title;
-            modalContent.innerHTML = content;
 
-            const modal = new bootstrap.Modal(document.getElementById('menuModal'));
-            modal.show();
-        }
-    </script>
+
+            <script>
+                function showModal(title, content) {
+                    const modalTitle = document.getElementById('menuModalLabel');
+                    const modalContent = document.getElementById('menuModalContent');
+
+                    modalTitle.innerHTML = title;
+                    modalContent.innerHTML = content;
+
+                    const modal = new bootstrap.Modal(document.getElementById('menuModal'));
+                    modal.show();
+                }
+
+                function extractVideoId(url) {
+                    try {
+                        const parsed = new URL(url);
+
+                        if (parsed.hostname === 'www.youtube.com') {
+                            if (parsed.pathname === '/watch') {
+                                return parsed.searchParams.get('v');
+                            } else if (parsed.pathname.startsWith('/embed/')) {
+                                return parsed.pathname.split('/embed/')[1];
+                            } else if (parsed.pathname.startsWith('/live/')) {
+                                return parsed.pathname.split('/live/')[1];
+                            } else {
+                                // fallback for unknown paths
+                                return parsed.pathname.slice(1).split('/')[0];
+                            }
+                        }
+
+                        if (parsed.hostname === 'youtu.be') {
+                            return parsed.pathname.slice(1);
+                        }
+
+                        return null;
+                    } catch {
+                        return null;
+                    }
+                }
+
+
+                function toEmbedUrl(url) {
+                    const id = extractVideoId(url);
+                    return id ? `https://www.youtube.com/embed/${id}` : null;
+                }
+
+                function showYoutubeModal(title, urls) {
+                    document.getElementById('ytModalLabel').innerText = title;
+                    const ytList = document.getElementById('ytVideoList');
+                    ytList.innerHTML = '';
+
+                    urls.forEach((url, index) => {
+                        const embedUrl = toEmbedUrl(url);
+                        if (!embedUrl) return;
+
+                        const btn = document.createElement('button');
+                        btn.className = 'btn btn-primary text-black btn-sm me-2 mb-2';
+                        btn.innerText = `Video ${index + 1}`;
+                        btn.onclick = () => {
+                            document.getElementById('ytIframe').src = embedUrl;
+                        };
+                        ytList.appendChild(btn);
+                    });
+
+                    document.getElementById('ytIframe').src = '';
+                    const modal = new bootstrap.Modal(document.getElementById('ytModal'));
+                    modal.show();
+                }
+
+                document.getElementById('ytModal').addEventListener('hidden.bs.modal', function () {
+                    document.getElementById('ytIframe').src = '';
+                });
+            </script>
         @endsection
