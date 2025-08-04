@@ -34,7 +34,7 @@
                                                 <div class="col-sm-12 d-flex justify-content-center mb-3">
                                                     @if ($data['status2'] == 'Gizi Kurang')
                                                         <img src="{{ asset('assets/images/gizi_kurang.jpeg') }}" alt="" class="w-50">
-                                                    @elseif ($data['status2'] == 'Gizi normal')
+                                                    @elseif ($data['status2'] == 'Gizi Normal')
                                                         <img src="{{ asset('assets/images/gizi_normal.jpeg') }}" alt="" class="w-50">
                                                     @else
                                                         <img src="{{ asset('assets/images/gizi_lebih.jpeg') }}" alt="" class="w-50">
