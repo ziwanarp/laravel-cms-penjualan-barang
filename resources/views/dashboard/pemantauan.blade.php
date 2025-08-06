@@ -15,32 +15,37 @@
                 <div class="col-12 col-lg-12 col-md-12">
                     <div class="card shadow p-4 mb-5">
                         <div class="container mt-4">
-                            <!-- TERAKHIR DIINPUT -->
-                            <div class="text-center mb-4">
-                                <button class="btn btn-primary px-5 py-3">Nama: {{ $imt->nama }}</button>
-                            </div>
-
-                            <!-- 3 Kolom: TINGGI BADAN, BERAT BADAN, LILA -->
-                            <div class="d-flex justify-content-center gap-3 mb-4">
-                                <button class="btn btn-primary">TINGGI BADAN: {{ $imt->tb }}</button>
-                                <button class="btn btn-primary">BERAT BADAN: {{ $imt->bb }}</button>
-                                <button class="btn btn-primary">LILA: {{ $imt->lila ?? 0 }}</button>
-                            </div>
-
-                            <!-- PEMANTAUAN PERTUMBUHAN -->
-                            <div class="text-center mb-3">
-                                <button class="btn btn-primary px-4 py-3">
-                                    PEMANTAUAN PERTUMBUHAN<br>
-                                    {{ $imt->penjelasan ?? $imt->tanda_umum }}
-                                </button>
-                            </div>
-
-                            <!-- Chart Example -->
-                           <div class="d-flex p-3 justify-content-center">
-                                <div class="mx-auto" style="width: 600px;">
-                                    <canvas id="growthChart"></canvas>
+                            <h4 class="d-flex justify-content-center">No Data</h4>
+                            @if (!empty($imt))
+                                
+                                <!-- TERAKHIR DIINPUT -->
+                                <div class="text-center mb-4">
+                                    <button class="btn btn-primary px-5 py-3">Nama: {{ $imt->nama }}</button>
                                 </div>
-                            </div>
+
+                                <!-- 3 Kolom: TINGGI BADAN, BERAT BADAN, LILA -->
+                                <div class="d-flex justify-content-center gap-3 mb-4">
+                                    <button class="btn btn-primary">TINGGI BADAN: {{ $imt->tb }}</button>
+                                    <button class="btn btn-primary">BERAT BADAN: {{ $imt->bb }}</button>
+                                    <button class="btn btn-primary">LILA: {{ $imt->lila ?? 0 }}</button>
+                                </div>
+
+                                <!-- PEMANTAUAN PERTUMBUHAN -->
+                                <div class="text-center mb-3">
+                                    <button class="btn btn-primary px-4 py-3">
+                                        PEMANTAUAN PERTUMBUHAN<br>
+                                        {{ $imt->penjelasan ?? $imt->tanda_umum }}
+                                    </button>
+                                </div>
+
+                                <!-- Chart Example -->
+                            <div class="d-flex p-3 justify-content-center">
+                                    <div class="mx-auto" style="width: 600px;">
+                                        <canvas id="growthChart"></canvas>
+                                    </div>
+                                </div>
+
+                            @endif
 
                         </div>
                     </div>

@@ -183,6 +183,8 @@ class ImtController extends Controller
         $validatedData['status2']                   = $statusGizi;
         $validatedData['gizi']                      = $statusGizi;
         $validatedData['imt']                       = $imt;
+        
+        $validatedData['catatan']                   = auth()->user()->id;
 
         Imt::create($validatedData);
 

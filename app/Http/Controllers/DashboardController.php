@@ -28,7 +28,7 @@ class DashboardController extends Controller
         // dd(Imt::orderBy('id', 'desc')->first());
          return view('dashboard.pemantauan', [
             'title' => 'Pemantauan',
-            'imt'   => Imt::orderBy('id', 'desc')->first()
+            'imt'   => Imt::where('catatan', auth()->user()->id)->orderBy('id', 'desc')->first()
         ]);
     }
 }
