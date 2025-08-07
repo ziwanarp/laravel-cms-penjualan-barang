@@ -27,11 +27,7 @@
                                                 - Lakukan aktivitas fisik minimal 30 menit sehari.
                                                 - Istirahat cukup dan kelola stres.
 
-                                                Pantau berat badan dan tinggi badan secara berkala untuk memastikan kondisi tetap ideal.
-                                                
-                                                https://www.kompasiana.com/erlinanurazizah/61a6c437259d5c6e9e1d79d2/pendidikan-gizi-prakonsepsi-bagi-calon-pengantin-sebagai-upaya-menghindari-bayi-dengan-gizi-buruk
-                                                https://www.idntimes.com/health/fitness/5-nutrisi-yang-penting-untuk-dipenuhi-perempuan-usia-subur-01-bmy7p-pqklbv
-                                                https://nasyiah.or.id/Berita/baca/324/Gizi-dalam-Siklus-Kehidupan-Perempuan.html?utm_source=chatgpt.com',
+                                                Pantau berat badan dan tinggi badan secara berkala untuk memastikan kondisi tetap ideal.',
 
                                                     'kurang' => 'Status gizi Anda berada dalam kategori **kurang**. Ini berarti tubuh Anda mungkin kekurangan asupan energi atau zat gizi penting.  
                                                 Beberapa langkah yang dapat dilakukan:
@@ -41,11 +37,7 @@
                                                 - Periksa apakah ada gangguan penyerapan nutrisi (misalnya anemia, infeksi saluran cerna, dll).
                                                 - Konsultasikan dengan petugas kesehatan atau ahli gizi jika berat badan sulit naik.
 
-                                                Tujuan utama adalah meningkatkan massa tubuh secara sehat dan terkontrol.
-                                                
-                                                https://www.kompasiana.com/erlinanurazizah/61a6c437259d5c6e9e1d79d2/pendidikan-gizi-prakonsepsi-bagi-calon-pengantin-sebagai-upaya-menghindari-bayi-dengan-gizi-buruk
-                                                https://www.idntimes.com/health/fitness/5-nutrisi-yang-penting-untuk-dipenuhi-perempuan-usia-subur-01-bmy7p-pqklbv
-                                                https://nasyiah.or.id/Berita/baca/324/Gizi-dalam-Siklus-Kehidupan-Perempuan.html?utm_source=chatgpt.com',
+                                                Tujuan utama adalah meningkatkan massa tubuh secara sehat dan terkontrol.',
 
                                                     'lebih' => 'Status gizi Anda berada dalam kategori **lebih** (berat badan berlebih atau obesitas ringan). Ini berarti ada kelebihan energi yang disimpan dalam tubuh dalam bentuk lemak.  
                                                 Langkah-langkah yang dapat membantu:
@@ -55,11 +47,7 @@
                                                 - Hindari makan sambil menonton TV atau bermain gadget.
                                                 - Usahakan tidur cukup dan hindari stres berlebih karena bisa memicu makan emosional.
 
-                                                Dengan pola hidup sehat yang konsisten, Anda bisa menurunkan berat badan secara bertahap dan mencegah penyakit terkait obesitas seperti diabetes dan hipertensi.
-                                                
-                                                https://www.kompasiana.com/erlinanurazizah/61a6c437259d5c6e9e1d79d2/pendidikan-gizi-prakonsepsi-bagi-calon-pengantin-sebagai-upaya-menghindari-bayi-dengan-gizi-buruk
-                                                https://www.idntimes.com/health/fitness/5-nutrisi-yang-penting-untuk-dipenuhi-perempuan-usia-subur-01-bmy7p-pqklbv
-                                                https://nasyiah.or.id/Berita/baca/324/Gizi-dalam-Siklus-Kehidupan-Perempuan.html?utm_source=chatgpt.com',
+                                                Dengan pola hidup sehat yang konsisten, Anda bisa menurunkan berat badan secara bertahap dan mencegah penyakit terkait obesitas seperti diabetes dan hipertensi.',
                                                 ],
 
                                     'Asupan' => [
@@ -71,10 +59,7 @@
                                                 - Susu rendah lemak atau produk olahan susu.
                                                 - Lemak sehat: alpukat, kacang-kacangan, minyak zaitun.
 
-                                                Pastikan kebutuhan energi harian tercukupi dan jangan melewatkan sarapan.
-                                                
-                                                https://health.detik.com/berita-detikhealth/d-6507859/7-nutrisi-penting-yang-dibutuhkan-wanita-usia-subur
-                                                https://www.kompasiana.com/lucywidasari/5b987557ab12ae6c3b261795/pentingnya-multimikronutrien-sejak-prakonsepsi-sebelum-pembuahan-dan-selama-kehamilan-dalam-mencegah-stunting',
+                                                Pastikan kebutuhan energi harian tercukupi dan jangan melewatkan sarapan.',
 
                                                     'kurang' => 'Status gizi Anda **kurang**, sehingga tubuh membutuhkan tambahan energi dan nutrisi untuk memperbaiki massa tubuh dan fungsi organ.  
                                                 Rekomendasi asupan nutrisi:
@@ -84,10 +69,7 @@
                                                 - Konsumsi minuman bergizi seperti susu atau smoothies buah plus yogurt.
                                                 - Suplemen zat besi dan vitamin (jika direkomendasikan oleh tenaga medis).
 
-                                                Konsistensi dan frekuensi makan yang cukup sangat penting untuk memperbaiki gizi kurang.
-                                                
-                                                https://health.detik.com/berita-detikhealth/d-6507859/7-nutrisi-penting-yang-dibutuhkan-wanita-usia-subur
-                                                https://www.kompasiana.com/lucywidasari/5b987557ab12ae6c3b261795/pentingnya-multimikronutrien-sejak-prakonsepsi-sebelum-pembuahan-dan-selama-kehamilan-dalam-mencegah-stunting',
+                                                Konsistensi dan frekuensi makan yang cukup sangat penting untuk memperbaiki gizi kurang.',
 
                                                     'lebih' => 'Status gizi Anda **lebih**, sehingga disarankan untuk mengatur pola makan yang lebih rendah kalori dan lemak, namun tetap bergizi.  
                                                 Rekomendasi asupan nutrisi:
@@ -98,10 +80,7 @@
                                                 - Perbanyak minum air putih dan kurangi konsumsi minuman bersoda atau sirup.
                                                 - Bila perlu, konsultasikan suplemen penunjang metabolisme dengan tenaga medis.
 
-                                                Tujuan utama adalah menciptakan defisit kalori sehat dan menjaga keseimbangan nutrisi.
-                                                
-                                                https://health.detik.com/berita-detikhealth/d-6507859/7-nutrisi-penting-yang-dibutuhkan-wanita-usia-subur
-                                                https://www.kompasiana.com/lucywidasari/5b987557ab12ae6c3b261795/pentingnya-multimikronutrien-sejak-prakonsepsi-sebelum-pembuahan-dan-selama-kehamilan-dalam-mencegah-stunting',
+                                                Tujuan utama adalah menciptakan defisit kalori sehat dan menjaga keseimbangan nutrisi.',
                                                 ],
 
 
@@ -130,9 +109,7 @@
 
                                                 Sejumlah pakar mengatakan Indonesia menghadapi 'beban ganda malnutrisi' menyusul tingginya angka penduduk yang mengalami gejala kekerdilan dan kegemukan. Marion Roche, pakar kesehatan remaja di Nutrition International, mengatakan minimnya pengetahuian gizi di kalangan perempuan mengejutkan, terutama jika mengingat tingkat gizi balita yang banyak membaik.
 
-                                                'Remaja perempuan tidak mengerti apa itu kesehatan. Kesehatan dipahami dengan tidak adanya penyakit,' ujarnya. 'Kita harus memberikan mereka pengetahuan tentang bagaimana membuat pilihan yang sehat.'.
-                                                
-                                                https://www.dw.com/id/bagaimana-mitos-makanan-membuat-perempuan-indonesia-kekurangan-gizi/a-44171737",
+                                                'Remaja perempuan tidak mengerti apa itu kesehatan. Kesehatan dipahami dengan tidak adanya penyakit,' ujarnya. 'Kita harus memberikan mereka pengetahuan tentang bagaimana membuat pilihan yang sehat.'.",
                                             ],
                                     'Rujukan' => [
                                         'faskes' => 'Informasi Faskes terdekat .',
@@ -219,6 +196,9 @@
                                                         {{ ucfirst($item) }}
                                                     </button>
                                                 @endforeach
+                                                <button class="btn btn-xl btn-primary"
+                                                        onclick="showModalLink('Edukasi')">Link Edukasi
+                                                </button>
                                             </div>
                                         </div>
                                     </div>
@@ -234,6 +214,9 @@
                                                         {{ ucfirst($item) }}
                                                     </button>
                                                 @endforeach
+                                                 <button class="btn btn-xl btn-primary"
+                                                        onclick="showModalLink('Asupan')">Link Asupan
+                                                </button>
                                             </div>
                                         </div>
                                     </div>
@@ -275,6 +258,9 @@
                                                     onclick="showModal('Artikel - Mitos', `{!! nl2br($materi['Artikel']['mitos']) !!}`)">
                                                     Mitos
                                                 </button>
+                                                 <button class="btn btn-xl btn-primary"
+                                                        onclick="showModalLink('Artikel')">Link Artikel
+                                                </button>
                                             </div>
                                         </div>
                                     </div>
@@ -315,6 +301,19 @@
                     </div>
                 </div>
             </div>
+            
+            {{-- MODAL --}}
+            <div class="modal fade" id="linkModal" tabindex="-1" aria-labelledby="linkModalLabel" aria-hidden="true">
+                <div class="modal-dialog modal-lg modal-dialog-scrollable">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="linkModalLabel">Judul</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Tutup"></button>
+                        </div>
+                        <div class="modal-body" id="linkModalContent" style="font-size: 1.3rem;"></div>
+                    </div>
+                </div>
+            </div>
 
             {{-- Modal Video --}}
             <div class="modal fade" id="ytModal" tabindex="-1" aria-labelledby="ytModalLabel" aria-hidden="true">
@@ -337,6 +336,49 @@
 
 
             <script>
+               function showModalLink(content) {
+                    const modalTitle = document.getElementById('linkModalLabel');
+                    const modalContent = document.getElementById('linkModalContent');
+
+                    // Daftar link berdasarkan kategori
+                    const linksMap = {
+                        Edukasi: [
+                            "https://www.kompasiana.com/erlinanurazizah/61a6c437259d5c6e9e1d79d2/pendidikan-gizi-prakonsepsi-bagi-calon-pengantin-sebagai-upaya-menghindari-bayi-dengan-gizi-buruk",
+                            "https://www.idntimes.com/health/fitness/5-nutrisi-yang-penting-untuk-dipenuhi-perempuan-usia-subur-01-bmy7p-pqklbv",
+                            "https://nasyiah.or.id/Berita/baca/324/Gizi-dalam-Siklus-Kehidupan-Perempuan.html?utm_source=chatgpt.com"
+                        ],
+                        Asupan: [
+                            "https://health.detik.com/berita-detikhealth/d-6507859/7-nutrisi-penting-yang-dibutuhkan-wanita-usia-subur",
+                            "https://www.kompasiana.com/lucywidasari/5b987557ab12ae6c3b261795/pentingnya-multimikronutrien-sejak-prakonsepsi-sebelum-pembuahan-dan-selama-kehamilan-dalam-mencegah-stunting"
+                        ],
+                        Artikel: [
+                            "https://www.dw.com/id/bagaimana-mitos-makanan-membuat-perempuan-indonesia-kekurangan-gizi/a-44171737"
+                        ]
+                    };
+
+                    const links = linksMap[content] || [];
+
+                    // Buat HTML dari link
+                    let html = '';
+                    if (links.length > 0) {
+                        html = '<ul>';
+                        links.forEach(link => {
+                            html += `<li><a href="${link}" target="_blank">${link}</a></li>`;
+                        });
+                        html += '</ul>';
+                    } else {
+                        html = '<p>Tidak ada link tersedia.</p>';
+                    }
+
+                    // Tampilkan ke modal
+                    modalTitle.innerHTML = content + ' - Link';
+                    modalContent.innerHTML = html;
+
+                    const modal = new bootstrap.Modal(document.getElementById('linkModal'));
+                    modal.show();
+                }
+
+
                 function showModal(title, content) {
                     const modalTitle = document.getElementById('menuModalLabel');
                     const modalContent = document.getElementById('menuModalContent');
