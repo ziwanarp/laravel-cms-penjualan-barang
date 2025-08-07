@@ -64,10 +64,10 @@
                             
                             <td>
                                 <a href="/masteruser/{{ $user->id }}" class="badge bg-info"><span data-feather="eye"></span></a>
-                                <a href="/masteruser/{{ $user->id }}/edit" class="badge bg-warning"><span data-feather="edit"></span></a>
                                 @if ($user->role == 'Admin')
-                                    
+                                
                                 @else
+                                    <a href="/masteruser/{{ $user->id }}/edit" class="badge bg-warning"><span data-feather="edit"></span></a>
                                     <form action="/masteruser/{{ $user->id }}" method="post" class="d-inline">
                                 @method('delete')
                                 @csrf
