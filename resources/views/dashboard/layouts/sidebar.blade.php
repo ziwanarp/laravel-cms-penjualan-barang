@@ -32,7 +32,7 @@
                 </a>
             </li>
 
-            {{-- @can('admin') --}}
+            @can('admin')
             <li
                 class="sidebar-item {{ Request::is('masteruser*') ? 'active' : '' }}">
                 <a href="/masteruser" class='sidebar-link'>
@@ -55,7 +55,7 @@
                     <span>Master Barang</span>
                 </a>
             </li> --}}
-            {{-- @endcan --}}
+            @endcan
 
             {{-- <li
                 class="sidebar-item {{ Request::is('penjualanbarang*') ? 'active' : '' }}">
