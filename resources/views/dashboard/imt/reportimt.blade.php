@@ -13,7 +13,7 @@
 <script>
     $(document).ready(function () {
         $('#table1').DataTable({
-            dom: 'Bfrtip',
+            dom: 'Blfrtip',
             buttons: ['print']
         });
     });
