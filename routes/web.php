@@ -41,6 +41,13 @@ Route::middleware('auth')->group(function () {
     Route::get('/pemantauan', [DashboardController::class, 'pemantauan']);
 
     Route::get('/reportimt', [ImtController::class, 'reportimt']);
+
+    Route::get('/catatan', [DashboardController::class, 'catatanMingguan']);
+    Route::post('/catatan', [DashboardController::class, 'catatanMingguanInsert']);
+    Route::post('/catatan/minggu1', [DashboardController::class, 'minggu1insert']);
+    Route::post('/catatan/minggu2', [DashboardController::class, 'minggu2insert']);
+    Route::post('/catatan/minggu3', [DashboardController::class, 'minggu3insert']);
+    Route::post('/catatan/minggu4', [DashboardController::class, 'minggu4insert']);
 });
 
 Route::middleware('admin')->group(function () {

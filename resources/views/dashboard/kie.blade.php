@@ -186,22 +186,27 @@
                                 <div class="row gy-4 justify-content-center">
 
                                     {{-- EDUKASI --}}
-                                    <div class="col-12 col-md-6">
+                                   <div class="col-12 col-md-6">
                                         <div class="p-4 border border-danger rounded-4">
                                             <h4 class="text-center text-black">Edukasi</h4>
-                                            <div class="d-flex justify-content-around mt-3">
-                                                @foreach (['normal', 'kurang', 'lebih'] as $item)
-                                                    <button class="btn btn-xl btn-primary"
-                                                        onclick="showModal('Edukasi - {{ ucfirst($item) }}', `{!! nl2br($materi['Edukasi'][$item]) !!}`)">
-                                                        {{ ucfirst($item) }}
-                                                    </button>
-                                                @endforeach
-                                                <button class="btn btn-xl btn-primary"
-                                                        onclick="showModalLink('Edukasi')">Link Edukasi
-                                                </button>
+
+                                            <div class="row mt-3 g-2 text-center">
+
+
+                                                {{-- Image 1-9 --}}
+                                                @for ($i = 1; $i <= 9; $i++)
+                                                    <div class="col-4">
+                                                        <button class="btn btn-primary w-100"
+                                                            onclick="showImageModal({{ $i }})">
+                                                            Image {{ $i }}
+                                                        </button>
+                                                    </div>
+                                                @endfor
+
                                             </div>
                                         </div>
                                     </div>
+
 
                                     {{-- ASUPAN NUTRISI --}}
                                     <div class="col-12 col-md-6">
@@ -449,5 +454,25 @@
                 document.getElementById('ytModal').addEventListener('hidden.bs.modal', function () {
                     document.getElementById('ytIframe').src = '';
                 });
+
+                function showImageModal(imageNumber) {
+
+                    const modalTitle = document.getElementById('menuModalLabel');
+                    const modalContent = document.getElementById('menuModalContent');
+
+                    modalTitle.innerHTML = 'Edukasi - Image ' + imageNumber;
+
+                    modalContent.innerHTML = `
+                        <div class="text-center">
+                            <img src="{{ asset('assets/images/') }}/${imageNumber}.jpeg"
+                                class="img-fluid rounded shadow"
+                                alt="Image ${imageNumber}">
+                        </div>
+                    `;
+
+                    const modal = new bootstrap.Modal(document.getElementById('menuModal'));
+                    modal.show();
+                }
+
             </script>
         @endsection

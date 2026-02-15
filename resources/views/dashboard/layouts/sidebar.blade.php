@@ -95,6 +95,14 @@
                     <span>Pemantauan</span>
                 </a>
             </li>
+
+             <li
+                class="sidebar-item {{ Request::is('catatan*') ? 'active' : '' }}">
+                <a href="/catatan" class='sidebar-link'>
+                    <i class="bi bi-person-lines-fill"></i>
+                    <span>Catatan Mingguan</span>
+                </a>
+            </li>
             
             <li class="sidebar-title">Logout</li>
 
