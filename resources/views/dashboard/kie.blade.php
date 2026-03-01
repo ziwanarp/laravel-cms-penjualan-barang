@@ -187,23 +187,14 @@
 
                                     {{-- EDUKASI --}}
                                    <div class="col-12 col-md-6">
-                                        <div class="p-4 border border-danger rounded-4">
-                                            <h4 class="text-center text-black">Edukasi</h4>
+                                        <div class="p-4 border border-danger rounded-4 text-center">
+                                            <h4 class="text-black mb-4">Edukasi</h4>
 
-                                            <div class="row mt-3 g-2 text-center">
-
-
-                                                {{-- Image 1-9 --}}
-                                                @for ($i = 1; $i <= 9; $i++)
-                                                    <div class="col-4">
-                                                        <button class="btn btn-primary w-100"
-                                                            onclick="showImageModal({{ $i }})">
-                                                            Image {{ $i }}
-                                                        </button>
-                                                    </div>
-                                                @endfor
-
-                                            </div>
+                                            <button class="btn btn-primary px-5"
+                                                data-bs-toggle="modal"
+                                                data-bs-target="#edukasiModal">
+                                                Lihat Edukasi
+                                            </button>
                                         </div>
                                     </div>
 
@@ -219,9 +210,9 @@
                                                         {{ ucfirst($item) }}
                                                     </button>
                                                 @endforeach
-                                                 <button class="btn btn-xl btn-primary"
+                                                 {{-- <button class="btn btn-xl btn-primary"
                                                         onclick="showModalLink('Asupan')">Link Asupan
-                                                </button>
+                                                </button> --}}
                                             </div>
                                         </div>
                                     </div>
@@ -338,6 +329,61 @@
                 </div>
             </div>
 
+            <!-- MODAL -->
+            <div class="modal fade" id="edukasiModal" tabindex="-1">
+                <div class="modal-dialog modal-dialog-centered modal-lg">
+                    <div class="modal-content rounded-4">
+
+                        <div class="modal-header">
+                            <h5 class="modal-title">Edukasi</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                        </div>
+
+                        <div class="modal-body">
+
+                            <div id="edukasiCarousel" class="carousel slide">
+
+                                <div class="carousel-inner">
+
+                                    @for ($i = 1; $i <= 8; $i++)
+                                        <div class="carousel-item {{ $i == 1 ? 'active' : '' }}">
+                                            <img src="{{ asset('assets/images/'.$i.'.jpeg') }}"
+                                                class="d-block w-100 rounded"
+                                                alt="Image {{ $i }}">
+                                        </div>
+                                    @endfor
+
+                                </div>
+
+                                <!-- PREV -->
+                                <button class="carousel-control-prev"
+                                        type="button"
+                                        data-bs-target="#edukasiCarousel"
+                                        data-bs-slide="prev">
+                                    <span class="bg-dark text-white px-3 py-2 rounded-circle fs-4">
+                                        &#10094;
+                                    </span>
+                                </button>
+
+                                <!-- NEXT -->
+                                <button class="carousel-control-next"
+                                        type="button"
+                                        data-bs-target="#edukasiCarousel"
+                                        data-bs-slide="next">
+                                    <span class="bg-dark text-white px-3 py-2 rounded-circle fs-4">
+                                        &#10095;
+                                    </span>
+                                </button>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+
 
 
             <script>
@@ -352,12 +398,14 @@
                             "https://www.idntimes.com/health/fitness/5-nutrisi-yang-penting-untuk-dipenuhi-perempuan-usia-subur-01-bmy7p-pqklbv",
                             "https://nasyiah.or.id/Berita/baca/324/Gizi-dalam-Siklus-Kehidupan-Perempuan.html?utm_source=chatgpt.com"
                         ],
-                        Asupan: [
-                            "https://health.detik.com/berita-detikhealth/d-6507859/7-nutrisi-penting-yang-dibutuhkan-wanita-usia-subur",
-                            "https://www.kompasiana.com/lucywidasari/5b987557ab12ae6c3b261795/pentingnya-multimikronutrien-sejak-prakonsepsi-sebelum-pembuahan-dan-selama-kehamilan-dalam-mencegah-stunting"
-                        ],
+                        // Asupan: [
+                        //     "https://health.detik.com/berita-detikhealth/d-6507859/7-nutrisi-penting-yang-dibutuhkan-wanita-usia-subur",
+                        //     "https://www.kompasiana.com/lucywidasari/5b987557ab12ae6c3b261795/pentingnya-multimikronutrien-sejak-prakonsepsi-sebelum-pembuahan-dan-selama-kehamilan-dalam-mencegah-stunting"
+                        // ],
                         Artikel: [
-                            "https://www.dw.com/id/bagaimana-mitos-makanan-membuat-perempuan-indonesia-kekurangan-gizi/a-44171737"
+                            "https://www.dw.com/id/bagaimana-mitos-makanan-membuat-perempuan-indonesia-kekurangan-gizi/a-44171737",
+                             "https://health.detik.com/berita-detikhealth/d-6507859/7-nutrisi-penting-yang-dibutuhkan-wanita-usia-subur",
+                            "https://www.kompasiana.com/lucywidasari/5b987557ab12ae6c3b261795/pentingnya-multimikronutrien-sejak-prakonsepsi-sebelum-pembuahan-dan-selama-kehamilan-dalam-mencegah-stunting"
                         ]
                     };
 
@@ -455,23 +503,58 @@
                     document.getElementById('ytIframe').src = '';
                 });
 
+                let currentImage = 1;
+                const totalImages = 9;
+
                 function showImageModal(imageNumber) {
-
-                    const modalTitle = document.getElementById('menuModalLabel');
-                    const modalContent = document.getElementById('menuModalContent');
-
-                    modalTitle.innerHTML = 'Edukasi - Image ' + imageNumber;
-
-                    modalContent.innerHTML = `
-                        <div class="text-center">
-                            <img src="{{ asset('assets/images/') }}/${imageNumber}.jpeg"
-                                class="img-fluid rounded shadow"
-                                alt="Image ${imageNumber}">
-                        </div>
-                    `;
+                    currentImage = imageNumber;
+                    renderImage();
 
                     const modal = new bootstrap.Modal(document.getElementById('menuModal'));
                     modal.show();
+                }
+
+                function renderImage() {
+                    const modalTitle = document.getElementById('menuModalLabel');
+                    const modalContent = document.getElementById('menuModalContent');
+
+                    modalTitle.innerHTML = 'Edukasi - Image ' + currentImage;
+
+                    modalContent.innerHTML = `
+                        <div class="text-center">
+                            <img src="{{ asset('assets/images/') }}/${currentImage}.jpeg"
+                                class="img-fluid rounded shadow mb-3"
+                                alt="Image ${currentImage}">
+
+                            <div class="d-flex justify-content-between">
+                                <button class="btn btn-secondary"
+                                    onclick="prevImage()"
+                                    ${currentImage === 1 ? 'disabled' : ''}>
+                                    Prev
+                                </button>
+
+                                <button class="btn btn-primary"
+                                    onclick="nextImage()"
+                                    ${currentImage === totalImages ? 'disabled' : ''}>
+                                    Next
+                                </button>
+                            </div>
+                        </div>
+                    `;
+                }
+
+                function nextImage() {
+                    if (currentImage < totalImages) {
+                        currentImage++;
+                        renderImage();
+                    }
+                }
+
+                function prevImage() {
+                    if (currentImage > 1) {
+                        currentImage--;
+                        renderImage();
+                    }
                 }
 
             </script>

@@ -88,19 +88,19 @@
                 </a>
             </li>
 
-             <li
-                class="sidebar-item {{ Request::is('pemantauan*') ? 'active' : '' }}">
-                <a href="/pemantauan" class='sidebar-link'>
+            <li
+                class="sidebar-item {{ Request::is('catatan*') ? 'active' : '' }}">
+                <a href="/catatan" class='sidebar-link'>
                     <i class="bi bi-person-lines-fill"></i>
-                    <span>Pemantauan</span>
+                    <span>Catatan Pemantauan</span>
                 </a>
             </li>
 
              <li
-                class="sidebar-item {{ Request::is('catatan*') ? 'active' : '' }}">
-                <a href="/catatan" class='sidebar-link'>
+                class="sidebar-item {{ Request::is('pemantauan*') ? 'active' : '' }}">
+                <a href="/pemantauan" class='sidebar-link'>
                     <i class="bi bi-person-lines-fill"></i>
-                    <span>Catatan Mingguan</span>
+                    <span>Grafik Status Gizi</span>
                 </a>
             </li>
             
